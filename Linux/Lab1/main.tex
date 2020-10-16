@@ -1,0 +1,19 @@
+%!TEX TS-program = xelatex
+\documentclass[a4paper]{article}
+\input{Styles/preamb.sty}
+\input{Styles/Personal_data.sty}
+
+\begin{document} % начало документа
+
+    %ТИТУЛЬНЫЙ ЛИСТ
+    \include{title}
+    
+    \tocloftpagestyle{empty}
+    \tableofcontents
+
+    %ЦЕЛЬ РАБОТЫ
+    \include{w_purp}
+
+    %ОСНОВНАЯ ЧАСТЬ
+    \include{work}
+\end{document}  % КОНЕЦ ДОКУМЕНТА !

@@ -1,0 +1,3 @@
+\babel@toc {russian}{}
+\contentsline {section}{Цель работы}{2}
+\contentsline {section}{\numberline {1}Ход выполнения}{3}
