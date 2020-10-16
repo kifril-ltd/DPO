@@ -3,4 +3,4 @@
 
 |Дисциплина|Итоговый балл|
 |----------|-------------|
-|[Операционная система Linux](https://github.com/kifril-ltd/DPO/tree/main/Linux)|<center>⌚</center>||
+|[Операционная система Linux](https://github.com/kifril-ltd/DPO/tree/main/Linux)| <center>⌚</center>||
