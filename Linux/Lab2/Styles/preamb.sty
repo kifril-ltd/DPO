@@ -1,0 +1,120 @@
+\usepackage[14pt]{extsizes} % для того чтобы задать нестандартный 14-ый размер шрифта
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{setspace,amsmath}
+\usepackage[left=25mm, top=20mm, right=20mm, bottom=20mm, nohead, footskip=10mm]{geometry} % настройки полей документа
+
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{multirow} %объединение строк в таблицах
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{hhline}
+
+
+\usepackage{listings,multicol} % Оформление исходного кода
+\lstset{
+    basicstyle=\scriptsize\ttfamily, % Размер и тип шрифта
+    breaklines=true, % Перенос строк
+    tabsize=2, % Размер табуляции
+    literate={--}{{-{}-}}2 % Корректно отображать двойной дефис
+}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
+\setmonofont{JetBrains Mono}
+
+
+\usepackage{amssymb,amsfonts,amsmath} % Математика
+\numberwithin{equation}{section}
+
+\usepackage{enumerate} % Тонкая настройка списков
+\usepackage{indentfirst} % Красная строка после заголовка
+\usepackage{float} % Расширенное управление плавающими объектами
+\usepackage{multirow} % Сложные таблицы
+
+\renewcommand{\baselinestretch}{1.4} % Полуторный межстрочный интервал
+\parindent 1.25cm % Абзацный отступ
+
+\sloppy             % Избавляемся от переполнений
+\hyphenpenalty=1000 % Частота переносов
+\clubpenalty=10000  % Запрещаем разрыв страницы после первой строки абзаца
+\widowpenalty=10000 % Запрещаем разрыв страницы после последней строки абзаца
+
+
+% Содержание
+\usepackage{tocloft}
+\usepackage{relsize}
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\MakeUppercase} % СОДЕРЖАНИЕ
+\renewcommand{\cftsecfont}{\hspace{0pt}}            % Имена секций в содержании не жирным шрифтом
+\renewcommand\cftsecleader{\cftdotfill{\cftdotsep}} % Точки для секций в содержании
+\renewcommand\cftsecpagefont{\mdseries}             % Номера страниц не жирные
+\setcounter{tocdepth}{3}                            % Глубина оглавления, до subsubsection
+
+% Секции без номеров (введение, заключение...), вместо section*{}
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\fontsize{14}{17}\selectfont}{\thesection}{5pt}{}
+\titlespacing{\section}{1.25cm}{0pt}{0pt}
+\titleformat{\subsection}{\normalfont\fontsize{14}{17}\selectfont}{\thesubsection}{5pt}{}
+\titlespacing{\subsection}{1.25cm}{0pt}{0pt}
+
+
+% Настройка названий таблиц
+\usepackage{caption}
+\DeclareCaptionLabelFormat{tablel}{#1 #2}
+\captionsetup[table]{labelfont=normalfont,labelformat=tablel,labelsep=endash,skip=0pt}
+\numberwithin{table}{section}
+%Названия рисунков
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+
+% Оформление библиографии и подрисуночных записей через точку
+\makeatletter
+\renewcommand*{\@biblabel}[1]{\hfill#1.}
+\renewcommand*\l@section{\@dottedtocline{1}{1em}{1em}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}} % Формат рисунка секция.номер
+\renewcommand{\thetable}{\thesection.\arabic{table}} % Формат таблицы секция.номер
+\def\redeflsection{\def\l@section{\@dottedtocline{1}{0em}{10em}}}
+\makeatother
+
+% Списки
+\usepackage{enumitem}
+\setlist[enumerate,itemize]{leftmargin=12.7mm} % Отступы в списках
+
+% \makeatletter
+%     \AddEnumerateCounter{\asbuk}{\@asbuk}{м)}
+% \makeatother
+\setlist{nolistsep} % Нет отступов между пунктами списка
+\newcounter{No}
+\renewenvironment{enumerate}[1][\arabic{No}.\hfil]{\begin{list}{#1}{\topsep=0pt\parsep=0pt plus 1pt\itemsep=\parsep\leftmargin=0pt\itemindent=\parindent\usecounter{No}}\addtolength{\itemindent}{\labelwidth}}{\end{list}}
+
+\renewenvironment{itemize}[1][{---\hfil}]{\begin{list}{#1}{\topsep=0pt\parsep=0pt plus 1pt\itemsep=\parsep\leftmargin=0pt \itemindent=\parindent}\addtolength{\itemindent}{\labelwidth}}{\end{list}}
+% \renewcommand{\labelitemi}{--} % Маркет списка --
+% \renewcommand{\labelenumi}{\asbuk{enumi})} % Список второго уровня
+% \renewcommand{\labelenumii}{\arabic{enumii})} % Список третьего уровня
+
+% Формат подрисуночных надписей
+\RequirePackage{caption}
+\DeclareCaptionLabelSeparator{defffis}{ -- } % Разделитель
+\captionsetup[figure]{justification=centering, labelsep=defffis, format=plain} % Подпись рисунка по центру
+\captionsetup[table]{justification=raggedright, labelsep=defffis, format=plain, singlelinecheck=false} % Подпись таблицы слева
+\addto\captionsrussian{\renewcommand{\figurename}{Рисунок}} % Имя фигуры
+
+\setcounter{page}{2} %начало нумерации страниц
+
+% Пути к каталогам с изображениями
+\usepackage{graphicx} % Вставка картинок и дополнений
+\graphicspath{{Images/}}
+
+\newcommand{\addimg}[4]{ % Добавить рисунок непосредственно в это место
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#2\linewidth]{#1}
+        \caption{#3} \label{#4}
+    \end{figure}
+}
+
