@@ -6,3 +6,4 @@
 | [№3. Управление процессами в Linux](https://github.com/kifril-ltd/DPO/tree/main/Linux/Lab3) | <center>✔️</center> ||
 | [№4. Управление процессами в ОС Ubuntu](https://github.com/kifril-ltd/DPO/tree/main/Linux/Lab4) | <center>✔️</center> ||
 | [№5. Программирование на SHELL. Использование командных файлов](https://github.com/kifril-ltd/DPO/tree/main/Linux/Lab5) | <center>✔️</center> ||
+| [№6. Контейнеризация](https://github.com/kifril-ltd/DPO/tree/main/Linux/Lab6) | <center>✔️</center> ||

@@ -1,0 +1,6 @@
+\babel@toc {russian}{}
+\contentsline {section}{Цель работы}{2}
+\contentsline {section}{\numberline {1}Ход работы}{3}
+\contentsline {subsection}{\numberline {1.1}Часть 1}{3}
+\contentsline {subsection}{\numberline {1.2}Часть 2}{11}
+\contentsline {section}{Контрольные вопросы}{14}

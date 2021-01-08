@@ -1,0 +1,25 @@
+version: "3"
+services:
+    php-fmp:
+        container_name: php-fpm
+        build: 
+            context: .
+            dockerfile: docker/php.Dockerfile
+        volumes: 
+            - ./:/var/www/symfony
+            - ./logs/symfony:/var/www/symfony/log
+        extra_hosts: 
+            - "db:192.168.0.103"
+
+    nginx:
+        container_name: nginx
+        build:
+            context: .
+            dockerfile: docker/nginx.Dockerfile
+        ports: 
+            - "80:80"
+        volumes: 
+            - ./:/var/www/symfony
+            - ./logs/nginx/:/var/log/nginx
+        links: 
+            - php-fmp
