@@ -1,0 +1,11 @@
+\babel@toc {russian}{}
+\contentsline {section}{Цель работы}{2}
+\contentsline {section}{Задание кафедры}{3}
+\contentsline {section}{\numberline {1}Ход работы}{4}
+\contentsline {subsection}{\numberline {1.1}Подключение к удаленному серверу по паролю}{4}
+\contentsline {subsection}{\numberline {1.2}Просмотр окружения пользователя}{4}
+\contentsline {subsection}{\numberline {1.3}Генерация пары ключей доступа к серверу}{5}
+\contentsline {subsection}{\numberline {1.4}Передача публичного ключа на сервер}{6}
+\contentsline {subsection}{\numberline {1.5}Организация подключения к серверу по имени}{6}
+\contentsline {section}{Вывод}{8}
+\contentsline {section}{Контрольные вопросы}{9}
