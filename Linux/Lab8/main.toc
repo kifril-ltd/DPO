@@ -1,0 +1,7 @@
+\babel@toc {russian}{}
+\contentsline {section}{Цель работы}{2}
+\contentsline {section}{\numberline {1}Ход работы}{3}
+\contentsline {subsection}{\numberline {1.1}Создание дампа}{3}
+\contentsline {subsection}{\numberline {1.2}Восстановление БД из дампа}{6}
+\contentsline {section}{Вывод}{8}
+\contentsline {section}{Контрольные вопросы}{9}

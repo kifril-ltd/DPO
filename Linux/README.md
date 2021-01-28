@@ -8,3 +8,4 @@
 | [№5. Программирование на SHELL. Использование командных файлов](https://github.com/kifril-ltd/DPO/tree/main/Linux/Lab5) | <center>✔️</center> ||
 | [№6. Контейнеризация](https://github.com/kifril-ltd/DPO/tree/main/Linux/Lab6) | <center>✔️</center> ||
 | [№7. Работа с SSH](https://github.com/kifril-ltd/DPO/tree/main/Linux/Lab7) | <center>✔️</center> ||
+| [№8. Создание дамба БД и восстановление](https://github.com/kifril-ltd/DPO/tree/main/Linux/Lab8) | <center>✔️</center> ||
