@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <title>SQL инъекция</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div class="protected w-100 m-5">
+                <h4 class="text-center">Защищенное поле</h4>
+                <form action="" id="id-protected-form">
+                    <div class="form-group d-flex flex-column">
+                        <input type="text"
+                               name="protected_user_id"
+                               id="id-protected-input"
+                               class="form-control"
+                               placeholder="ID пользователя">
+                        <button type="button" id="id-protected-submit" class="btn btn-success">Получить данные</button>
+                    </div>
+                </form>
+            </div>
+            <div class="injected w-100 m-5">
+                <h4 class="text-center">Незащищенное поле</h4>
+                <form action="" id="id-injected-form">
+                    <div class="form-group d-flex flex-column">
+                        <input type="text"
+                               name="injected_user_id"
+                               id="id-injected-input"
+                               class="form-control"
+                               placeholder="ID пользователя">
+                        <br><button type="button" id="id-injected-submit" class="btn btn-danger">Получить данные</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="text-center">
+            <h4>Результат</h4>
+            <ul id="id-result"></ul>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
