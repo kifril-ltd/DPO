@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <title>Адрес</title>
+</head>
+<body>
+<div class="container">
+    <form action="" method="post" id="id-address" class="my-5">
+        <div class="form-group d-flex justify-content-center">
+            <input type="text"
+                   name="address"
+                   id="id-input-address"
+                   class="form-control w-50 p-3 text-center"
+                   placeholder="Адрес">
+            <button type="submit" id="id-address-submit" class="btn btn-success mx-2">Поиск</button>
+        </div>
+    </form>
+
+    <h1>Результат поиска</h1>
+    <div class="result d-flex justify-content-between" id="id-result">
+        <div class="card w-50">
+            <div class="card-header">
+                Структурированный адрес
+            </div>
+            <ul class="list-group list-group-flush" id="id-address-list">
+            </ul>
+        </div>
+        <div class="card w-25 mx-2 align-self-start">
+            <div class="card-header">
+                Координаты
+            </div>
+            <ul class="list-group list-group-flush" id="id-coords-list">
+            </ul>
+        </div>
+        <div class="card w-50">
+            <div class="card-header">
+                Метро
+            </div>
+            <div class="card-body" id="id-result-metro">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
