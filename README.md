@@ -5,3 +5,4 @@
 |:----------:|:-------------:|
 |[Операционная система Linux](https://github.com/kifril-ltd/DPO/tree/main/Linux)|93/98|
 |[PHP](https://github.com/kifril-ltd/DPO/tree/main/PHP)|⌚|
+|[JS](https://github.com/kifril-ltd/DPO/tree/main/JS)|⌚|
